@@ -43,6 +43,6 @@ def test_outdated_products(
 ) -> None:
     mocked_datetime.date.today.return_value = datetime.date(2022, 2, 2)
     assert (
-            outdated_products(products_dict["products_list"])
-            == products_dict["outdated_products_list"]
+        outdated_products(products_dict["products_list"])
+        == products_dict["outdated_products_list"]
     )
